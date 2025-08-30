@@ -1,3 +1,3 @@
 from pwn import *
-res = xor("label", 13)
-print(res)
+res = xor("label".encode(), 13)
+print(res.decode())
